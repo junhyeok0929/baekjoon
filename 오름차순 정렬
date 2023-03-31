@@ -1,0 +1,26 @@
+#include <iostream>
+#include <algorithm>
+
+int main() {
+  int arr[100];
+  int n;
+  
+  std::cout << "배열 크기 입력: ";
+  std::cin >> n;
+
+  std::cout << "정수 " << n << "개 입력: ";
+  for (int i = 0; i < n; i++) {
+    std::cin >> arr[i];
+  }
+
+  // 오름차순 정렬
+  std::sort(arr, arr + n);
+
+  std::cout << "정렬된 배열: ";
+  for (int i = 0; i < n; i++) {
+    std::cout << arr[i] << " ";
+  }
+  std::cout << std::endl;
+
+  return 0;
+}

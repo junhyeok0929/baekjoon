@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int hour, minute, cookTime;
+    cin >> hour >> minute >> cookTime;
+
+    minute += cookTime; // 현재 분에 요리 시간을 더함
+
+    // 분이 60 이상인 경우 시간에 영향을 줌
+    if (minute >= 60) {
+        hour += minute / 60;
+        minute %= 60;
+    }
+
+    // 시간이 24 이상인 경우 24를 빼줌
+    if (hour >= 24) {
+        hour %= 24;
+    }
+
+    cout << hour << " " << minute << endl;
+
+    return 0;
+}

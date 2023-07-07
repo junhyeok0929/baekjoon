@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+
+    // 여기가 키포인트다 범위 지정을 잘해줘야 된다 알겠제
+    if (n >= 2 && n <= 9) {
+        for (int i = 1; i <= 9; i++) {
+            cout << n << " * " << i << " = " << n * i << endl;
+        }
+    }
+    else {
+        cout << "값의 범위가 잘못되었습니다." << endl;
+    }
+  
+}

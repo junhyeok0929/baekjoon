@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int total_money, n;
+    int  total_sum = 0;
+    cin >> total_money;
+    cin >> n;
+    for (int i = 1; i <= n; i++) {
+        int money, number;
+        cin >> money >> number;
+        int sum = money * number;
+        total_sum += sum;
+    }
+    if (total_sum== total_money)
+        cout << "Yes" << endl;
+    else
+        cout << "No" << endl;
+}
